@@ -1,0 +1,37 @@
+.contentor {
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-areas: "titulo titulo titulo"
+                         "main main aside"
+                         "rodape rodape rodape";
+
+    grid-gap:10px;
+    border:2em solid white;
+}
+
+.cabecalho {
+    grid-area: titulo;
+    background: grey;
+    padding:10px;
+    text-align: center;
+}
+.principal {
+    grid-area: main;
+    background: red;
+    padding:5px;
+}
+.secundario {
+    grid-area: aside;
+    background: black;
+    color:white;
+    padding:5px;
+}
+.footer {
+    grid-area: rodape;
+    background: green;
+    padding: 10px;
+    text-align: center;
+}
